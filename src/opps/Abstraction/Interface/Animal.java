@@ -1,0 +1,23 @@
+package opps.Abstraction.Interface;
+
+public interface Animal {
+    void sound();
+     void run();
+
+     }
+
+class Lion implements Animal{
+    public void sound(){
+        System.out.println("Roar");
+    }
+    public void run(){
+        System.out.println("running..");
+    }
+}
+class Driver{
+    public static void main(String[] args){
+        Lion l = new Lion();
+        l.run();
+        l.sound();
+    }
+}
